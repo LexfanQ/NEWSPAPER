@@ -1,0 +1,42 @@
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e20;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dfdfdf;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8e8e93;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #EDD1AA;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
+  overflow-y: auto; /* Включаем вертикальную прокрутку */
+
+}
+
+.photo img {
+  height: 100%; /* Автоматически подгоняем высоту */
+  display: block; /* Убираем пробел снизу изображения */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
